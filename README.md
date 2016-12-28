@@ -1,4 +1,36 @@
-Suppose the current approximations of the zeros are
+# Find Roots of Polynomial
+
+A program to find all complex roots for a real-coefficient polynomial equation.
+
+## Attempt I. Bisection Method
+
+Advantage :
+
+- Easy implementation.
+
+Disadvantage :
+
+- Only work for real roots.
+
+## Attempt II. Bairstow's Method
+
+Find all quadratic factors of the polynomial and solve each of them. See [here](http://web2.uwindsor.ca/courses/engineering/ahmed/PDF%20FILES%20FOR%20C++/Chapter%20IX%20C++.pdf).
+
+Advantage :
+
+- Work for complex roots.
+
+Disadvantage :
+
+- Behave badly at repeated roots (multiple roots or close roots). e.g. (x-2)^3(x+1)^2 or (x+1)^8. Since for x in (root-∆, root+∆), f(x) is too close to 0, the program cannot precisely extract quadratic equations.
+
+## Final Work. Aberth Method
+
+See [here](https://en.wikipedia.org/wiki/Aberth_method).
+
+We first initialize the approximations of zeros within bounds given by [Rouché theorem](https://en.wikipedia.org/wiki/Properties_of_polynomial_roots).
+
+Then we adjust their values until the offsets approach 0. Suppose the current approximations of the zeros are
 
 <img src="http://latex.codecogs.com/gif.latex?z_1,\dots,z_n\in\mathbb{C}"/>
 
