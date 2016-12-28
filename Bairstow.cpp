@@ -1,6 +1,3 @@
-// A simple program for solving complex roots for polynomial functions, using Bairstow's method.
-
-
 //////////////////////////////////////////////////////////////////
 //                                                              //
 // To Improve :                                                 //
@@ -18,9 +15,6 @@
 //                                                              //
 //////////////////////////////////////////////////////////////////
 
-
-
-
 #include <iostream>
 #include <cmath>
 #include <stdlib.h>
@@ -32,9 +26,6 @@ using namespace std;
 #define MAXDEGREE 20
 #define EPS 1e-19
 #define OUTPUTEPS 1e-15
-
-
-
 
 //
 // Extract individual real or complex roots from list of quadratic factors
