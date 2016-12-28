@@ -215,18 +215,3 @@ inline void getRemainingPoly() {
             a[i + j] -= k * divisor[j];
     }
 }
-
-
-
-
-/*
-
-1
--4
-6
--26
-65
--42
- 
- 
- */
